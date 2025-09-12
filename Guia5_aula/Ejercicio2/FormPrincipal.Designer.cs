@@ -1,6 +1,6 @@
-﻿namespace Ejercicio3_
+﻿namespace Ejercicio2_
 {
-    partial class Form1
+    partial class FormPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -35,17 +35,18 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(49, 38);
+            textBox1.Location = new Point(58, 53);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(493, 227);
+            textBox1.ScrollBars = ScrollBars.Both;
+            textBox1.Size = new Size(348, 337);
             textBox1.TabIndex = 0;
             // 
             // button1
             // 
-            button1.Location = new Point(548, 102);
+            button1.Location = new Point(480, 75);
             button1.Name = "button1";
-            button1.Size = new Size(125, 140);
+            button1.Size = new Size(144, 108);
             button1.TabIndex = 1;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -55,16 +56,16 @@
             // 
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(49, 270);
+            listBox1.Location = new Point(449, 223);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(473, 94);
+            listBox1.Size = new Size(264, 169);
             listBox1.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(706, 376);
+            ClientSize = new Size(800, 450);
             Controls.Add(listBox1);
             Controls.Add(button1);
             Controls.Add(textBox1);

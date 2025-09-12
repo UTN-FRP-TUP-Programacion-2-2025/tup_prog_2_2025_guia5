@@ -3,9 +3,9 @@ using System.Text.RegularExpressions;
 
 namespace Ejercicio3_
 {
-    public partial class Form1 : Form
+    public partial class FormPrincipal : Form
     {
-        public Form1()
+        public FormPrincipal()
         {
             InitializeComponent();
         }
@@ -18,7 +18,7 @@ namespace Ejercicio3_
 
             #region importar vehiculos y multas
 
-            Regex regex = new Regex(@"");
+            Regex regex = new Regex(@"<multa>[\s\S]*?</multa>", RegexOptions.IgnoreCase);
             Match match=regex.Match(expresion);
 
             while (match.Success)

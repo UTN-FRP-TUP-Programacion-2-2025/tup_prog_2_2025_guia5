@@ -1,6 +1,6 @@
-﻿namespace Ejercicio2_
+﻿namespace Ejercicio1_
 {
-    partial class Form1
+    partial class FormPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,47 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
             button1 = new Button();
-            listBox1 = new ListBox();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
             SuspendLayout();
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(58, 53);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.ScrollBars = ScrollBars.Both;
-            textBox1.Size = new Size(348, 337);
-            textBox1.TabIndex = 0;
             // 
             // button1
             // 
-            button1.Location = new Point(480, 75);
+            button1.Location = new Point(319, 54);
             button1.Name = "button1";
-            button1.Size = new Size(144, 108);
-            button1.TabIndex = 1;
+            button1.Size = new Size(100, 91);
+            button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // listBox1
+            // textBox1
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(449, 223);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(264, 169);
-            listBox1.TabIndex = 2;
+            textBox1.Location = new Point(56, 30);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(230, 23);
+            textBox1.TabIndex = 1;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(56, 73);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(230, 115);
+            textBox2.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(listBox1);
-            Controls.Add(button1);
+            ClientSize = new Size(473, 200);
+            Controls.Add(textBox2);
             Controls.Add(textBox1);
+            Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -77,8 +74,8 @@
 
         #endregion
 
-        private TextBox textBox1;
         private Button button1;
-        private ListBox listBox1;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }

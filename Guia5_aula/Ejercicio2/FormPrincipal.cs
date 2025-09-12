@@ -2,10 +2,10 @@ using System.Text;
 
 namespace Ejercicio2_
 {
-    public partial class Form1 : Form
+    public partial class FormPrincipal : Form
     {
         static Random azar=new Random();
-        public Form1()
+        public FormPrincipal()
         {
             InitializeComponent();
         }

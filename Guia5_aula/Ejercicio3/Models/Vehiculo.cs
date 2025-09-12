@@ -1,5 +1,7 @@
 ﻿
 
+using System.Text.RegularExpressions;
+
 namespace Ejercicio3_.Models;
 
 public class Vehiculo:IComparable<Vehiculo>
@@ -34,6 +36,14 @@ public class Vehiculo:IComparable<Vehiculo>
 
     public bool Importar(string xml)
     {
+        Regex regex = new Regex(@"<patente>([\s\w]+?)</patente>", RegexOptions.IgnoreCase);
+        Match match=regex.Match(xml);
+        if(match.Groups.Count!=2) return false;
+
+        Patente = match.Groups[1].Value;
+
+        //llamando el importar de la multa
+
         return true;
     }
 
